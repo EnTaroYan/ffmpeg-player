@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtffmpegplayerClass</class>
+ <widget class="QMainWindow" name="QtffmpegplayerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1423</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qtffmpegplayer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_a">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton_a</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_b">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton_b</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labela">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelb">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>10</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1423</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Qtffmpegplayer.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_a</sender>
+   <signal>clicked()</signal>
+   <receiver>QtffmpegplayerClass</receiver>
+   <slot>button_a_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>80</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_b</sender>
+   <signal>clicked()</signal>
+   <receiver>QtffmpegplayerClass</receiver>
+   <slot>button_b_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>26</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>37</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>button_a_click()</slot>
+  <slot>button_b_click()</slot>
+ </slots>
+</ui>
